@@ -37,6 +37,7 @@ void inputfile(office *a, int n)
     fprintf(fptr, "%d", n);
     for (int i=0; i<n; i++)
     {
+        printf("Enter the number of customers in room %d: ", i+1);
         fprintf(fptr, "\n%d", input(a[i]));
     }
     fclose(fptr);
